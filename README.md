@@ -1,1 +1,2 @@
-# Qual-Seu-Instrumento
+# INTELIGENCIA-ARTIFICIAL
+Site de funções utilizando IA
