@@ -1,9 +1,9 @@
-:root{
- --cor-fundo: #11436e;
- --cor-principal: #12315a;
- --cor-destaque: #afcde9;
- --cor-secundaria: #191d3f;
- --cor-texto: #a5bfee;
+:root {
+    --cor-fundo: #11436e;
+    --cor-principal: #12315a;
+    --cor-destaque: #afcde9;
+    --cor-secundaria: #191d3f;
+    --cor-texto: #a5bfee;
 }
 
 body {
@@ -13,18 +13,28 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.caixa-principal{
+
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+}
+
+.imagem-inicial {
+    width: 600px;
+    height: auto;
+    margin: 20px 0;
 }
 
 button {
@@ -33,11 +43,42 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+}
 
+.caixa-alternativas button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.caixa-alternativas button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+.texto-resultado {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.imagem-instrumento {
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
 }
